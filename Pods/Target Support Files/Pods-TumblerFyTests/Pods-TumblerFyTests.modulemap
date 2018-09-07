@@ -1,0 +1,6 @@
+framework module Pods_TumblerFyTests {
+  umbrella header "Pods-TumblerFyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
