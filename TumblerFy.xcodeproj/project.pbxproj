@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */; };
-		0AFDDCE82142D34F0023A4E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE72142D34F0023A4E8 /* ViewController.swift */; };
 		0AFDDCEB2142D34F0023A4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE92142D34F0023A4E8 /* Main.storyboard */; };
 		0AFDDCED2142D3500023A4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */; };
 		0AFDDCF02142D3500023A4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCEE2142D3500023A4E8 /* LaunchScreen.storyboard */; };
 		0AFDDCFB2142D3510023A4E8 /* TumblerFyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDCFA2142D3510023A4E8 /* TumblerFyTests.swift */; };
 		0AFDDD062142D3510023A4E8 /* TumblerFyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDD052142D3510023A4E8 /* TumblerFyUITests.swift */; };
+		0AFDDD142142D91A0023A4E8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDD132142D91A0023A4E8 /* PhotosViewController.swift */; };
+		0AFDDD1A2142E9A10023A4E8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDD192142E9A10023A4E8 /* PhotoCell.swift */; };
 		74B1552416828A7045251E60 /* Pods_TumblerFyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E42C4380EA59BD9328088EC /* Pods_TumblerFyTests.framework */; };
 		7A0B6A8FBEAC1A1CA6E3636C /* Pods_TumblerFyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA82CDCB5F45BAC8CB76D8E2 /* Pods_TumblerFyUITests.framework */; };
 		F6CB55F487F2EA980D4FE426 /* Pods_TumblerFy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F934569CB1CF383469B25406 /* Pods_TumblerFy.framework */; };
@@ -39,7 +40,6 @@
 /* Begin PBXFileReference section */
 		0AFDDCE22142D34F0023A4E8 /* TumblerFy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblerFy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AFDDCE72142D34F0023A4E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AFDDCEA2142D34F0023A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFDDCEF2142D3500023A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		0AFDDD012142D3510023A4E8 /* TumblerFyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblerFyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDDD052142D3510023A4E8 /* TumblerFyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblerFyUITests.swift; sourceTree = "<group>"; };
 		0AFDDD072142D3510023A4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFDDD132142D91A0023A4E8 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		0AFDDD192142E9A10023A4E8 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		41461F9F12393C51B14B68BD /* Pods-TumblerFyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblerFyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblerFyUITests/Pods-TumblerFyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E42C4380EA59BD9328088EC /* Pods_TumblerFyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblerFyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA2635B08CEF60BDB53D8A2 /* Pods-TumblerFyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblerFyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblerFyUITests/Pods-TumblerFyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */,
-				0AFDDCE72142D34F0023A4E8 /* ViewController.swift */,
+				0AFDDD192142E9A10023A4E8 /* PhotoCell.swift */,
+				0AFDDD132142D91A0023A4E8 /* PhotosViewController.swift */,
 				0AFDDCE92142D34F0023A4E8 /* Main.storyboard */,
 				0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */,
 				0AFDDCEE2142D3500023A4E8 /* LaunchScreen.storyboard */,
@@ -377,7 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AFDDCE82142D34F0023A4E8 /* ViewController.swift in Sources */,
+				0AFDDD142142D91A0023A4E8 /* PhotosViewController.swift in Sources */,
+				0AFDDD1A2142E9A10023A4E8 /* PhotoCell.swift in Sources */,
 				0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
