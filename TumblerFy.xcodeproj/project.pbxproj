@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0FE4952147304800D5FB3A /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FE4942147304800D5FB3A /* PhotoVC.swift */; };
 		0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */; };
 		0AFDDCEB2142D34F0023A4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE92142D34F0023A4E8 /* Main.storyboard */; };
 		0AFDDCED2142D3500023A4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0FE4942147304800D5FB3A /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		0AFDDCE22142D34F0023A4E8 /* TumblerFy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblerFy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFDDCEA2142D34F0023A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */,
 				0AFDDCEE2142D3500023A4E8 /* LaunchScreen.storyboard */,
 				0AFDDCF12142D3500023A4E8 /* Info.plist */,
+				0A0FE4942147304800D5FB3A /* PhotoVC.swift */,
 			);
 			path = TumblerFy;
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 				0AFDDCDE2142D34F0023A4E8 /* Sources */,
 				0AFDDCDF2142D34F0023A4E8 /* Frameworks */,
 				0AFDDCE02142D34F0023A4E8 /* Resources */,
-				D9E8F551E110C3B5E13C024A /* [CP] Embed Pods Frameworks */,
+				629A1FA3DA18184B17CA1EDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +320,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		629A1FA3DA18184B17CA1EDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TumblerFy/Pods-TumblerFy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblerFy/Pods-TumblerFy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79BAFA1D2B3C438607ABCB53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,26 +380,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9E8F551E110C3B5E13C024A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TumblerFy/Pods-TumblerFy-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblerFy/Pods-TumblerFy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -383,6 +390,7 @@
 				0AFDDD142142D91A0023A4E8 /* PhotosViewController.swift in Sources */,
 				0AFDDD1A2142E9A10023A4E8 /* PhotoCell.swift in Sources */,
 				0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */,
+				0A0FE4952147304800D5FB3A /* PhotoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

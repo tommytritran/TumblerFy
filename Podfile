@@ -4,7 +4,7 @@
 target 'TumblerFy' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-    pod 'AlamofireImage'
+  pod 'AlamofireImage'
 # Pods for TumblerFy
 
   target 'TumblerFyTests' do
