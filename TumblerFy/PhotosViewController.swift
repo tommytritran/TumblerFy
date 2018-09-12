@@ -38,6 +38,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         session.configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         let task = session.dataTask(with: url) { (data, response, error) in
             if let error = error {
+                self.alertHandler()
                 print(error.localizedDescription)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
@@ -50,9 +51,17 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             }
             
         }
+        
         task.resume()
     }
 
+    
+    func alertHandler(){
+        let alert = UIAlertController(title:"Network error", message: "could not load movies", preferredStyle:UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Try again", style: UIAlertActionStyle.default, handler: {(action) in self.fetchPicture()}))
+        
+        self.present(alert, animated: true,completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
