@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A0FE4952147304800D5FB3A /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FE4942147304800D5FB3A /* PhotoVC.swift */; };
+		0ABECA37214C12F0001AB817 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABECA36214C12F0001AB817 /* PhotoDetailsViewController.swift */; };
 		0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */; };
 		0AFDDCEB2142D34F0023A4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCE92142D34F0023A4E8 /* Main.storyboard */; };
 		0AFDDCED2142D3500023A4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFDDCEC2142D3500023A4E8 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0A0FE4942147304800D5FB3A /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		0ABECA36214C12F0001AB817 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		0AFDDCE22142D34F0023A4E8 /* TumblerFy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblerFy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFDDCE52142D34F0023A4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFDDCEA2142D34F0023A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				0AFDDCEE2142D3500023A4E8 /* LaunchScreen.storyboard */,
 				0AFDDCF12142D3500023A4E8 /* Info.plist */,
 				0A0FE4942147304800D5FB3A /* PhotoVC.swift */,
+				0ABECA36214C12F0001AB817 /* PhotoDetailsViewController.swift */,
 			);
 			path = TumblerFy;
 			sourceTree = "<group>";
@@ -325,19 +328,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TumblerFy/Pods-TumblerFy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AFDDD142142D91A0023A4E8 /* PhotosViewController.swift in Sources */,
+				0ABECA37214C12F0001AB817 /* PhotoDetailsViewController.swift in Sources */,
 				0AFDDD1A2142E9A10023A4E8 /* PhotoCell.swift in Sources */,
 				0AFDDCE62142D34F0023A4E8 /* AppDelegate.swift in Sources */,
 				0A0FE4952147304800D5FB3A /* PhotoVC.swift in Sources */,
